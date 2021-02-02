@@ -1,14 +1,53 @@
+@font-face {
+    font-family: 'Obviously';
+    src: url('/static/fonts/Obviously-Wide.otf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Obviously';
+    src: url('/static/fonts/Obviously-WideMedium.otf');
+    font-weight: medium;
+}
+@font-face {
+    font-family: 'Obviously';
+    src: url('/static/fonts/Obviously-WideSemibold.otf');
+    font-weight: bold;
+}
+
+:root {
+    --font-family: 'Obviously', sans-serif;
+  
+    --font-size: 16px;
+
+    
+    --color-black: #1D1D1D;
+    --color-red: #B11818;
+    --color-white: #F0F0F0;
+  
+    --color-primary: var(--color-red);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  font-style: normal;
+  font-weight: normal;
+
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  
+  color: var(--color-white);
+
+  background-color: var(--color-black);
 }
 
 a {
   color: inherit;
   text-decoration: none;
+
+  color: var(--color-red);
 }
 
 * {

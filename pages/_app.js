@@ -7,14 +7,14 @@ import { theme } from 'essential-slices'
 import { ThemeProvider, BaseStyles } from 'theme-ui'
 
 export default class App extends NextApp {
-  render() {
-    const { Component, pageProps } = this.props
-    return (
-      <ThemeProvider theme={theme}>
-        <BaseStyles>
-          <Component {...pageProps} />
-        </BaseStyles>
-      </ThemeProvider>
-    )
-  }
+    render() {
+        const { Component, pageProps } = this.props
+        return (
+            <ThemeProvider theme={theme}>
+                <BaseStyles>
+                    <Component {...pageProps} />
+                </BaseStyles>
+            </ThemeProvider>
+        )
+    }
 }
