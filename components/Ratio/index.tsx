@@ -1,5 +1,4 @@
 import { CSSProperties } from 'react'
-import s from './index.module.css'
 import cx from 'classnames'
 
 interface RatioProps {
@@ -14,21 +13,48 @@ interface RatioProps {
     reverseMobile?: boolean
 }
 
-export const Ratio: React.FC<RatioProps> = ({ spacer = undefined, ...props }) => {
+export const Ratio: React.FC<RatioProps> = ({
+    spacer = undefined,
+    ...props
+}) => {
     return (
-        <div 
-            className={cx(s.container, props.reverseMobile && s.reverseMobile)}
-            style={props.style}
-        >
-            <div style={{flex: props.left }}>
-                {props.leftContent}
-            </div>
+        <>
+            <style jsx>{`
+                .container {
+                    display: flex;
+                }
 
-            {!spacer ? null : <div style={{ flex: spacer }} />}
+                .item {
+                    border-left: var(--border);
+                    border-right: var(--border);
+                }
 
-            <div style={{ flex: props.right }}>
-                {props.rightContent}
+                @media screen and (max-width: 1280px) {
+                    .container {
+                        flex-direction: column;
+                    }
+                    .reverseMobile {
+                        flex-direction: column-reverse;
+                    }
+                }
+            `}</style>
+            <div
+                className={cx(
+                    'container',
+                    props.reverseMobile && 'reverseMobile'
+                )}
+                style={props.style}
+            >
+                <div className='item' style={{ flex: props.left }}>
+                    {props.leftContent}
+                </div>
+
+                {!spacer ? null : <div style={{ flex: spacer }} />}
+
+                <div className='item' style={{ flex: props.right }}>
+                    {props.rightContent}
+                </div>
             </div>
-        </div>
+        </>
     )
 }
