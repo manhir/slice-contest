@@ -21,7 +21,7 @@ export const Title: React.FC<TitleProps> = ({ level = 1, style, ...props }) => {
     const defStyle = (
         <style jsx>{`
             .title {
-                font-weight: bold;
+                font-family: Obviously Medium;
                 font-style: normal;
 
                 align-self: flex-start;
@@ -29,7 +29,7 @@ export const Title: React.FC<TitleProps> = ({ level = 1, style, ...props }) => {
 
             .h1 {
                 font-size: 128px;
-                font-weight: bold;
+                font-family: Obviously Bold;
                 line-height: 140px;
             }
 
@@ -45,7 +45,7 @@ export const Title: React.FC<TitleProps> = ({ level = 1, style, ...props }) => {
 
             .h4 {
                 font-size: 72px;
-                font-weight: bold;
+                font-family: Obviously Bold;
                 line-height: 80px;
             }
 

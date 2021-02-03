@@ -9,7 +9,6 @@ import { Button } from '../../components/Button'
 
 const MySlice = ({ slice }) => (
     <>
-        {console.log(slice.primary)}
         <Section bordered={false} fullWidth>
             <Title level={1} style={{ marginTop: 0 }}>
                 <FancyTitle
@@ -47,7 +46,6 @@ const MySlice = ({ slice }) => (
                         <Button
                             style={{
                                 borderTop: 'var(--border)',
-                                borderBottom: 'var(--border)',
                             }}
                         >
                             {slice.primary.button ?? 'Button'}

@@ -4,12 +4,12 @@
     font-weight: normal;
 }
 @font-face {
-    font-family: 'Obviously';
+    font-family: 'Obviously Medium';
     src: url('/static/fonts/Obviously-WideMedium.otf');
     font-weight: medium;
 }
 @font-face {
-    font-family: 'Obviously';
+    font-family: 'Obviously Bold';
     src: url('/static/fonts/Obviously-WideSemibold.otf');
     font-weight: bold;
 }

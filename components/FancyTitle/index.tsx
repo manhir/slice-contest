@@ -6,7 +6,7 @@ export const FancyTitle: React.FC<any> = ({ count = 4, direction = 1, ...props }
                 <style jsx>{`
                     .stroke {
                         position: absolute;
-                        top: ${(i + 1) * .25 * direction}em;
+                        top: ${(i + 1) * .33 * direction}em;
                         left: 0;
                         z-index: ${i};
 
