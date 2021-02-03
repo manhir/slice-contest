@@ -20,9 +20,9 @@
           },
           "type": "StructuredText"
         },
-        "description": {
+        "subtitle": {
           "config": {
-            "label": "Description",
+            "label": "Subtitle",
             "placeholder": "A nice description of your feature",
             "allowTargetBlank": true,
             "single": "paragraph"
@@ -30,13 +30,19 @@
           "type": "StructuredText"
         },
         "picture": {
-          "type": "Image",
           "config": {
-            "id": "picture",
-            "label": "",
+            "label": "Picture",
             "constraint": {},
             "thumbnails": []
-          }
+          },
+          "type": "Image"
+        },
+        "button": {
+          "config": {
+            "label": "Button",
+            "placeholder": "Button"
+          },
+          "type": "Text"
         }
       },
       "items": {}

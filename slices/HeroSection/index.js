@@ -9,6 +9,7 @@ import { Button } from '../../components/Button'
 
 const MySlice = ({ slice }) => (
     <>
+        {console.log(slice.primary)}
         <Section bordered={false} fullWidth>
             <Title level={1} style={{ marginTop: 0 }}>
                 <FancyTitle
@@ -23,20 +24,39 @@ const MySlice = ({ slice }) => (
                 </FancyTitle>
             </Title>
         </Section>
-        <Section>
+        <Section containerStyle={{ marginBottom: 70 }}>
             <Ratio
                 left={3}
                 spacer={1}
                 right={6}
                 leftContent={
                     <>
-                        <Image src='/static/placeholder.svg' layout='fill' />
-                        <Button>Get Drip</Button>
+                        <div>
+                            <Image
+                                src={
+                                    slice.primary.picture?.url ??
+                                    '/static/placeholder.svg'
+                                }
+                                style={{
+                                    width: '100%',
+                                }}
+                                layout='fill'
+                                objectFit='cover'
+                            />
+                        </div>
+                        <Button
+                            style={{
+                                borderTop: 'var(--border)',
+                                borderBottom: 'var(--border)',
+                            }}
+                        >
+                            {slice.primary.button ?? 'Button'}
+                        </Button>
                     </>
                 }
                 rightContent={
                     <Title level={2} style={{ padding: '0 20px' }}>
-                        {slice.primary.description[0].text}
+                        {slice.primary.subtitle[0].text}
                     </Title>
                 }
             />
