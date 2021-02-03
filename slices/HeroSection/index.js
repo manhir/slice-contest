@@ -1,4 +1,3 @@
-import React from 'react'
 import { RichText } from 'prismic-reactjs'
 import { Section } from '../../components/Section'
 import { Title } from '../../components/Title'
@@ -7,7 +6,7 @@ import { Ratio } from '../../components/Ratio'
 import Image from 'next/image'
 import { Button } from '../../components/Button'
 
-const MySlice = ({ slice }) => (
+const HeroSection = ({ slice }) => (
     <>
         <Section bordered={false} fullWidth>
             <Title level={1} style={{ marginTop: 0 }}>
@@ -62,4 +61,4 @@ const MySlice = ({ slice }) => (
     </>
 )
 
-export default MySlice
+export default HeroSection

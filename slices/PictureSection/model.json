@@ -1,0 +1,61 @@
+{
+  "id": "picture_section",
+  "type": "SharedSlice",
+  "name": "PictureSection",
+  "description": "PictureSection",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "PictureSection",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title",
+            "placeholder": "This is where it all begins..."
+          }
+        },
+        "picture": {
+          "type": "Image",
+          "config": {
+            "id": "picture",
+            "label": "",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "text": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "default_value": "var(--color-black)",
+            "options": [
+              "var(--color-black)",
+              "var(--color-red)",
+              "var(--color-white)"
+            ]
+          },
+          "type": "Select"
+        },
+        "background": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "default_value": "var(--color-red)",
+            "options": [
+              "var(--color-red)",
+              "var(--color-black)",
+              "var(--color-white)"
+            ]
+          },
+          "type": "Select"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

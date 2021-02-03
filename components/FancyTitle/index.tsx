@@ -1,4 +1,9 @@
-export const FancyTitle: React.FC<any> = ({ count = 4, direction = 1, ...props }) => {
+export const FancyTitle: React.FC<any> = ({
+    count = 4,
+    direction = 1,
+    color = 'var(--color-primary)',
+    ...props
+}) => {
     const outlines = []
     for (let i = 0; i < count; i++) {
         outlines[i] = (
@@ -6,13 +11,13 @@ export const FancyTitle: React.FC<any> = ({ count = 4, direction = 1, ...props }
                 <style jsx>{`
                     .stroke {
                         position: absolute;
-                        top: ${(i + 1) * .33 * direction}em;
+                        top: ${(i + 1) * 0.33 * direction}em;
                         left: 0;
                         z-index: ${i};
 
                         color: transparent;
-                        -webkit-text-stroke: 1px var(--color-primary);
-                        opacity: .33;
+                        -webkit-text-stroke: 1px ${color};
+                        opacity: 0.33;
                     }
                 `}</style>
                 {props.children}

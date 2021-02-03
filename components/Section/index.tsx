@@ -28,12 +28,12 @@ export const Section: React.FC<SectionProps> = ({bordered=true, fullWidth=false,
                 }
             `}</style>
             <div className='container' style={props.containerStyle}>
-                <section
+                <div
                     className={`section ${props.className}`}
                     style={props.style}
                 >
                     {props.children}
-                </section>
+                </div>
             </div>
         </>
     )
