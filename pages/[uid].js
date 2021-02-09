@@ -5,9 +5,6 @@ import { useGetStaticProps, useGetStaticPaths } from 'next-slicezone/hooks'
 import resolver from '../sm-resolver.js'
 
 const Page = (props) => (
-    // <Layout>
-        
-    // </Layout>
     <SliceZone {...props} resolver={resolver} />
 )
 

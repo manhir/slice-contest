@@ -13,8 +13,8 @@ const HeroSection = ({ slice }) => (
             justifyContent: 'space-between',
         }}
     >
-        <Section bordered={false} fullWidth>
-            <Title level={1} style={{ marginTop: 0 }}>
+        <Section bordered={false}>
+            <Title level={1}>
                 <FancyTitle
                     style={{
                         color: 'var(--color-primary)',
