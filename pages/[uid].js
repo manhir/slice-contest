@@ -5,9 +5,10 @@ import { useGetStaticProps, useGetStaticPaths } from 'next-slicezone/hooks'
 import resolver from '../sm-resolver.js'
 
 const Page = (props) => (
-    <Layout>
-        <SliceZone {...props} resolver={resolver} />
-    </Layout>
+    // <Layout>
+        
+    // </Layout>
+    <SliceZone {...props} resolver={resolver} />
 )
 
 // Fetch content from prismic

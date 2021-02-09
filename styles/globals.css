@@ -49,6 +49,10 @@ a {
   color: var(--color-red);
 }
 
+img {
+    display: block;
+}
+
 * {
   box-sizing: border-box;
 }

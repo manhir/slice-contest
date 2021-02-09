@@ -3,11 +3,9 @@ import { RichText } from 'prismic-reactjs'
 import { Section } from '@/components/Section'
 import { Ratio } from '@/components/Ratio'
 import { Title } from '@/components/Title'
-import Image from 'next/image'
 
 const MySlice = ({ slice }) => (
     <>
-        {console.log(slice.items)}
         <Section
             bordered={false}
             containerStyle={{ borderTop: 'var(--border)' }}
@@ -22,17 +20,14 @@ const MySlice = ({ slice }) => (
                 <div style={{
                     position: 'relative',
                 }}>
-                    <Image
+                    <img
                         src={item.picture.url ?? '/static/placeholder.svg'}
                         style={{
                             width: '100%',
                             position: 'relative',
                             top: 0,
-                            zIndex: 1,
+                            zIndex: 1
                         }}
-                        layout='fill'
-                        objectFit='cover'
-                        className='img'
                     />
                     <div style={{
                         position: 'absolute',

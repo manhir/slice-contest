@@ -1,4 +1,3 @@
-import { RichText } from 'prismic-reactjs'
 import { Section } from '@/components/Section'
 import { Title } from '@/components/Title'
 import { FancyTitle } from '@/components/FancyTitle'
@@ -8,10 +7,10 @@ import { Button } from '@/components/Button'
 const HeroSection = ({ slice }) => (
     <div
         style={{
-            // height: '100vh',
-            // display: 'flex',
-            // flexDirection: 'column',
-            // justifyContent: 'space-between',
+            minHeight: '100vh',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
         }}
     >
         <Section bordered={false} fullWidth>
