@@ -30,7 +30,7 @@
         },
         "text": {
           "config": {
-            "label": "",
+            "label": "text color",
             "placeholder": "",
             "default_value": "var(--color-black)",
             "options": [
@@ -44,7 +44,7 @@
         "background": {
           "config": {
             "label": "",
-            "placeholder": "",
+            "placeholder": "bg color",
             "default_value": "var(--color-red)",
             "options": [
               "var(--color-red)",

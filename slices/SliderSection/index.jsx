@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Navigation, Pagination } from 'swiper'
 import { Section } from '@/components/Section'
 import { Button } from '@/components/Button'
-import Image from 'next/image'
 
 SwiperCore.use([Navigation, Pagination])
 
@@ -50,9 +49,8 @@ const SliderSection = ({ slice }) => {
                                 flexDirection: 'column',
                             }}
                         >
-                            <Image
+                            <img
                                 src={item.picture.url}
-                                layout='fill'
                                 style={{
                                     width: '100%',
                                 }}

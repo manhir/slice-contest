@@ -5,14 +5,14 @@ import { FancyTitle } from '@/components/FancyTitle'
 const PictureSection = ({ slice }) => (
     <Section
         containerStyle={{
-            height: '100vh',
             backgroundColor: slice.primary.background ?? 'var(--color-red)',
             marginBottom: 70,
         }}
         style={{
-            height: '100%',
+            maxHeight: 'calc(100vh - 70px)',
             display: 'flex',
             flexDirection: 'column',
+            justifyContent: 'space-beteen',
         }}
     >
         <Title
@@ -24,7 +24,11 @@ const PictureSection = ({ slice }) => (
         >
             <FancyTitle
                 direction={-1}
-                style={{ marginTop: '1.5em' }}
+                style={{
+                    marginTop: '1.5em',
+                    marginBottom: '0',
+                    paddingBottom: '.5em',
+                }}
                 color={slice.primary.text ?? 'var(--color-black)'}
             >
                 {slice.primary.title[0].text ?? 'Placeholder title'}
@@ -33,7 +37,6 @@ const PictureSection = ({ slice }) => (
         <img
             src={slice.primary.picture.url ?? '/static/placeholder.svg'}
             style={{
-                height: '100%',
                 objectFit: 'cover',
             }}
         />
