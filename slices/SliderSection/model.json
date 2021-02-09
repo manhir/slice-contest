@@ -1,0 +1,42 @@
+{
+  "id": "slider_section",
+  "type": "SharedSlice",
+  "name": "SliderSection",
+  "description": "SliderSection",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "SliderSection",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title",
+            "placeholder": "This is where it all begins..."
+          }
+        }
+      },
+      "items": {
+        "picture": {
+          "config": {
+            "label": "Picture",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "button": {
+          "config": {
+            "label": "",
+            "placeholder": "button text"
+          },
+          "type": "Text"
+        }
+      }
+    }
+  ]
+}

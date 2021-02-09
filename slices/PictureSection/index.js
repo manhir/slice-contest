@@ -1,6 +1,6 @@
-import { Section } from '../../components/Section'
-import { Title } from '../../components/Title'
-import { FancyTitle } from '../../components/FancyTitle'
+import { Section } from '@/components/Section'
+import { Title } from '@/components/Title'
+import { FancyTitle } from '@/components/FancyTitle'
 import Image from 'next/image'
 
 const PictureSection = ({ slice }) => (

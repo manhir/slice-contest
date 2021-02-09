@@ -1,8 +1,8 @@
 import React from 'react'
 import { RichText } from 'prismic-reactjs'
-import { Section } from '../../components/Section'
-import { Ratio } from '../../components/Ratio'
-import { Title } from '../../components/Title'
+import { Section } from '@/components/Section'
+import { Ratio } from '@/components/Ratio'
+import { Title } from '@/components/Title'
 import Image from 'next/image'
 
 const MySlice = ({ slice }) => (

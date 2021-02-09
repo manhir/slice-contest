@@ -1,14 +1,14 @@
 import { CSSProperties } from 'react'
 
-export type SectionProps = {
-    style?: CSSProperties
-    containerStyle?: CSSProperties
-    className?: string
-    bordered?: boolean
-    fullWidth?: boolean
-}
+// export type SectionProps = {
+//     style?: CSSProperties
+//     containerStyle?: CSSProperties
+//     className?: string
+//     bordered?: boolean
+//     fullWidth?: boolean
+// }
 
-export const Section: React.FC<SectionProps> = ({bordered=true, fullWidth=false, ...props}) => {
+export const Section = ({bordered=true, fullWidth=false, ...props}) => {
     return (
         <>
             <style jsx>{`

@@ -1,17 +1,14 @@
 @font-face {
     font-family: 'Obviously';
     src: url('/static/fonts/Obviously-Wide.otf');
-    font-weight: normal;
 }
 @font-face {
     font-family: 'Obviously Medium';
     src: url('/static/fonts/Obviously-WideMedium.otf');
-    font-weight: medium;
 }
 @font-face {
     font-family: 'Obviously Bold';
     src: url('/static/fonts/Obviously-WideSemibold.otf');
-    font-weight: bold;
 }
 
 :root {
@@ -54,4 +51,44 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+/* SWIPER STYLES */
+.swiper-button-disabled {
+    opacity: 1 !important;
+}
+
+.swiper-button-prev {
+    height: 100% !important;
+    width: calc(8.33% - 20px) !important;
+    margin-top: 0 !important;
+    top: auto !important;
+    left: 0px !important;
+    color: var(--color-primary) !important;
+    background-color: var(--color-black);
+    border-right: var(--border);
+
+    transition: color .25s, background-color .25s;
+} 
+.swiper-button-prev:hover {
+    background-color: var(--color-primary) !important;
+    color: var(--color-black) !important;
+}
+
+.swiper-button-next {
+    height: 100% !important;
+    width: calc(8.33% - 20px) !important;
+    z-index: 11 !important;
+    margin-top: 0 !important;
+    top: auto !important;
+    right: 0px !important;
+    color: var(--color-primary) !important;
+    background-color: var(--color-black);
+    border-left: var(--border);
+
+    transition: color .25s, background-color .25s;
+}
+.swiper-button-next:hover {
+    background-color: var(--color-primary) !important;
+    color: var(--color-black) !important;
 }

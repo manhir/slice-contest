@@ -1,4 +1,4 @@
-export const FancyTitle: React.FC<any> = ({
+export const FancyTitle = ({
     count = 4,
     direction = 1,
     color = 'var(--color-primary)',

@@ -1,20 +1,7 @@
-// pages/_app.js
-import React from 'react'
-import NextApp from 'next/app'
+import "../styles/globals.css";
 
-import { theme } from 'essential-slices'
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />;
+};
 
-import { ThemeProvider, BaseStyles } from 'theme-ui'
-
-export default class App extends NextApp {
-    render() {
-        const { Component, pageProps } = this.props
-        return (
-            <ThemeProvider theme={theme}>
-                <BaseStyles>
-                    <Component {...pageProps} />
-                </BaseStyles>
-            </ThemeProvider>
-        )
-    }
-}
+export default MyApp;

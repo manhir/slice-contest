@@ -1,19 +1,19 @@
 import { CSSProperties } from 'react'
 import cx from 'classnames'
 
-interface RatioProps {
-    left: string | number
-    right: string | number
-    style?: CSSProperties
-    spacer?: string | number
+// interface RatioProps {
+//     left: string | number
+//     right: string | number
+//     style?: CSSProperties
+//     spacer?: string | number
 
-    leftContent?: React.ReactNode
-    rightContent?: React.ReactNode
+//     leftContent?: React.ReactNode
+//     rightContent?: React.ReactNode
 
-    reverseMobile?: boolean
-}
+//     reverseMobile?: boolean
+// }
 
-export const Ratio: React.FC<RatioProps> = ({
+export const Ratio = ({
     spacer = undefined,
     ...props
 }) => {

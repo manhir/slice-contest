@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export const Button: React.FC<any> = ({ href, ...props }) => {
+export const Button = ({ href, ...props }) => {
     const style = (
         <style jsx>{`
             .button {

@@ -1,19 +1,24 @@
 import { RichText } from 'prismic-reactjs'
-import { Section } from '../../components/Section'
-import { Title } from '../../components/Title'
-import { FancyTitle } from '../../components/FancyTitle'
-import { Ratio } from '../../components/Ratio'
-import Image from 'next/image'
-import { Button } from '../../components/Button'
+import { Section } from '@/components/Section'
+import { Title } from '@/components/Title'
+import { FancyTitle } from '@/components/FancyTitle'
+import { Ratio } from '@/components/Ratio'
+import { Button } from '@/components/Button'
 
 const HeroSection = ({ slice }) => (
-    <>
+    <div
+        style={{
+            // height: '100vh',
+            // display: 'flex',
+            // flexDirection: 'column',
+            // justifyContent: 'space-between',
+        }}
+    >
         <Section bordered={false} fullWidth>
             <Title level={1} style={{ marginTop: 0 }}>
                 <FancyTitle
                     style={{
                         color: 'var(--color-primary)',
-                        textTransform: 'uppercase',
                     }}
                 >
                     {slice.primary.title
@@ -22,7 +27,11 @@ const HeroSection = ({ slice }) => (
                 </FancyTitle>
             </Title>
         </Section>
-        <Section containerStyle={{ marginBottom: 70 }}>
+        <Section
+            containerStyle={{
+                marginBottom: 70,
+            }}
+        >
             <Ratio
                 left={3}
                 spacer={1}
@@ -30,7 +39,7 @@ const HeroSection = ({ slice }) => (
                 leftContent={
                     <>
                         <div>
-                            <Image
+                            <img
                                 src={
                                     slice.primary.picture?.url ??
                                     '/static/placeholder.svg'
@@ -38,8 +47,6 @@ const HeroSection = ({ slice }) => (
                                 style={{
                                     width: '100%',
                                 }}
-                                layout='fill'
-                                objectFit='cover'
                             />
                         </div>
                         <Button
@@ -58,7 +65,7 @@ const HeroSection = ({ slice }) => (
                 }
             />
         </Section>
-    </>
+    </div>
 )
 
 export default HeroSection

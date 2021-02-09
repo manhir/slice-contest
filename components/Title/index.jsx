@@ -10,12 +10,12 @@ const levelClass = new Map([
     [6, 'h6'],
 ])
 
-export type TitleProps = {
-    level?: 1 | 2 | 3 | 4 | 5 | 6
-    style?: React.CSSProperties
-}
+// export type TitleProps = {
+//     level?: 1 | 2 | 3 | 4 | 5 | 6
+//     style?: React.CSSProperties
+// }
 
-export const Title: React.FC<TitleProps> = ({ level = 1, style, ...props }) => {
+export const Title = ({ level = 1, style, ...props }) => {
     const Tag = `h${level}`
 
     const defStyle = (
