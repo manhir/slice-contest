@@ -64,10 +64,10 @@ img {
 
 .swiper-button-prev {
     height: 100% !important;
-    width: calc(8.33% - 20px) !important;
+    width: calc(8.33%) !important;
     margin-top: 0 !important;
     top: auto !important;
-    left: 0px !important;
+    left: -2px !important;
     color: var(--color-primary) !important;
     background-color: var(--color-black);
     border-right: var(--border);
@@ -81,11 +81,11 @@ img {
 
 .swiper-button-next {
     height: 100% !important;
-    width: calc(8.33% - 20px) !important;
+    width: calc(8.33%) !important;
     z-index: 11 !important;
     margin-top: 0 !important;
     top: auto !important;
-    right: 0px !important;
+    right: -2px !important;
     color: var(--color-primary) !important;
     background-color: var(--color-black);
     border-left: var(--border);

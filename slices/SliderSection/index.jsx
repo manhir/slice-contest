@@ -3,72 +3,93 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Navigation, Pagination } from 'swiper'
 import { Section } from '@/components/Section'
 import { Button } from '@/components/Button'
+import { Title } from '@/components/Title'
 
 SwiperCore.use([Navigation, Pagination])
 
 const SliderSection = ({ slice }) => {
     return (
-        <Section
-            fullWidth
-            containerStyle={{
-                minHeight: '300px',
-                justifyContent: 'center',
-                marginBottom: 70,
-            }}
-            style={{
-                padding: 0,
-                height: '100%',
-                // overflow: 'hidden',
-            }}
-        >
-            <Swiper
-                spaceBetween={'8.33%'}
-                slidesPerView={3}
-                navigation
-                // pagination
-                autoplay
+        <>
+            <Section
+                containerStyle={{
+                    borderBottom: 'none',
+                }}
+            >
+                <Title
+                    level={3}
+                    style={{
+                        margin: '.25em 0 .5em 0',
+                    }}
+                >
+                    {slice.primary.title[0].text ?? 'Placeholder title'}
+                </Title>
+            </Section>
+            <Section
+                containerStyle={{
+                    height: '100%',
+                    justifyContent: 'center',
+                    marginBottom: 70,
+                }}
                 style={{
+                    padding: '0',
+                }}
+                containerStyle={{
                     height: '100%',
                 }}
             >
-                {slice.items.map((item, i) => (
-                    <SwiperSlide
-                        key={i}
-                        style={{
-                            width: '100%',
-                            height: '100%',
-                            marginLeft: i == 0 && 'calc(8.33% - 20px - 2px)',
-                            borderLeft: 'var(--border)',
-                            borderRight: 'var(--border)',
-                        }}
-                    >
-                        <div
+                <Swiper
+                    spaceBetween={'8.33%'}
+                    slidesPerView={3}
+                    navigation
+                    // pagination
+                    autoplay
+                    style={{
+                        height: '100%',
+                    }}
+                >
+                    {slice.items.map((item, i) => (
+                        <SwiperSlide
+                            key={i}
                             style={{
+                                flex: '1 1 100%',
                                 height: '100%',
-                                display: 'flex',
-                                flexDirection: 'column',
+                                marginLeft: i == 0 && 'calc(8.33% - 6px)',
+                                justifySelf: 'stretch',
+                                alignSelf: 'stretch',
                             }}
                         >
-                            <img
-                                src={item.picture.url}
+                            <div
                                 style={{
-                                    width: '100%',
-                                }}
-                            />
+                                    height: '100%',
+                                    borderLeft: 'var(--border)',
+                                    borderRight: 'var(--border)',
 
-                            <Button
-                                style={{
-                                    borderTop: 'var(--border)',
+                                    display: 'flex',
+                                    flexDirection: 'column',
                                 }}
                             >
-                                {item.button}
-                            </Button>
-                        </div>
-                    </SwiperSlide>
-                ))}
-                <SwiperSlide />
-            </Swiper>
-        </Section>
+                                <img
+                                    src={item.picture.url}
+                                    style={{
+                                        objectFit: 'cover',
+                                    }}
+                                />
+
+                                <Button
+                                    style={{
+                                        borderTop: 'var(--border)',
+                                    }}
+                                    href='/'
+                                >
+                                    {item.button}
+                                </Button>
+                            </div>
+                        </SwiperSlide>
+                    ))}
+                    <SwiperSlide />
+                </Swiper>
+            </Section>
+        </>
     )
 }
 
