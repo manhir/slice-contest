@@ -13,6 +13,7 @@ const SliderSection = ({ slice }) => {
             <Section
                 containerStyle={{
                     borderBottom: 'none',
+                    marginBottom: 0,
                 }}
             >
                 <Title
@@ -24,7 +25,6 @@ const SliderSection = ({ slice }) => {
             <Section
                 containerStyle={{
                     height: '100%',
-                    marginBottom: 70,
                 }}
                 style={{
                     padding: '0',

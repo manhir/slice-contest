@@ -8,7 +8,7 @@ const CardSection = ({ slice }) => (
     <>
         <Section
             bordered={false}
-            containerStyle={{ borderTop: 'var(--border)' }}
+            containerStyle={{ borderTop: 'var(--border)', marginBottom: 0 }}
         >
             <Title level={3}>
                 {slice.primary.title[0].text ?? 'Placeholder title'}
@@ -48,7 +48,7 @@ const CardSection = ({ slice }) => (
                 </div>
             )
             return (
-                <Section containerStyle={{ marginBottom: 70 }} key={i}>
+                <Section key={i}>
                     <Ratio
                         left={side ? 6 : 3}
                         spacer={1}

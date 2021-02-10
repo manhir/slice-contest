@@ -26,11 +26,7 @@ const HeroSection = ({ slice }) => (
                 </FancyTitle>
             </Title>
         </Section>
-        <Section
-            containerStyle={{
-                marginBottom: 70,
-            }}
-        >
+        <Section>
             <Ratio
                 left={3}
                 spacer={1}

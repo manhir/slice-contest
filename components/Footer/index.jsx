@@ -5,11 +5,7 @@ import s from './index.module.css'
 export const Footer = (props) => {
     return (
         <>
-            <Section
-                containerStyle={{
-                    marginBottom: 70,
-                }}
-            >
+            <Section>
                 <div
                     style={{
                         borderRight: 'var(--border)',

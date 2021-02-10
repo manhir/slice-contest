@@ -1,4 +1,6 @@
 import { CSSProperties } from 'react'
+import s from './index.module.css'
+import cx from 'classnames'
 
 // export type SectionProps = {
 //     style?: CSSProperties
@@ -8,33 +10,12 @@ import { CSSProperties } from 'react'
 //     fullWidth?: boolean
 // }
 
-export const Section = ({bordered=true, fullWidth=false, ...props}) => {
+export const Section = ({ bordered = true, fullWidth = false, ...props }) => {
     return (
-        <>
-            <style jsx>{`
-                .container {
-                    display: flex;
-                    align-items: center;
-                    justify-content: ${fullWidth ? 'stretch' : 'center'};
-                    height: 100%;
-
-                    border-top: ${bordered && 'var(--border);'}
-                    border-bottom: ${bordered && 'var(--border);'}
-                }
-                .section {
-                    padding: 0 calc(1440px * .0833);
-                    max-width: 1440px;
-                    width: 100%;
-                }
-            `}</style>
-            <div className='container' style={props.containerStyle}>
-                <div
-                    className={`section ${props.className}`}
-                    style={props.style}
-                >
-                    {props.children}
-                </div>
+        <div className={cx(s.container, bordered && s.bordered)} style={props.containerStyle}>
+            <div className={cx(s.section, props.className)} style={props.style}>
+                {props.children}
             </div>
-        </>
+        </div>
     )
 }

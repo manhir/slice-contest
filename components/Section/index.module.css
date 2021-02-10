@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 70px;
+}
+
+.section {
+    padding: 0 calc(1440px * .0833);
+    max-width: 1440px;
+    width: 100%;
+}
+
+.bordered {
+    border-top: var(--border);
+    border-bottom: var(--border);
+}

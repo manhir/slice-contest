@@ -3,44 +3,50 @@ import { Title } from '@/components/Title'
 import { FancyTitle } from '@/components/FancyTitle'
 
 const PictureSection = ({ slice }) => (
-    <Section
-        containerStyle={{
-            backgroundColor: slice.primary.background ?? 'var(--color-red)',
-            marginBottom: 70,
-        }}
-        style={{
-            maxHeight: 'calc(100vh - 70px)',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'space-beteen',
-        }}
-    >
-        <Title
-            level={4}
-            style={{
-                margin: 0,
-                color: slice.primary.text ?? 'var(--color-black)',
-            }}
-        >
-            <FancyTitle
-                direction={-1}
-                style={{
-                    marginTop: '1.5em',
-                    marginBottom: '0',
-                    paddingBottom: '.5em',
+    <>
+        {slice.items.map((item, i) => (
+            <Section
+                key={i}
+                containerStyle={{
+                    backgroundColor:
+                        item.background ?? 'var(--color-red)',
+                    marginBottom: 1 !== slice.items.length - 1 && 0,
                 }}
-                color={slice.primary.text ?? 'var(--color-black)'}
+                style={{
+                    maxHeight: 'calc(100vh - 70px)',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'space-beteen',
+                }}
             >
-                {slice.primary.title[0].text ?? 'Placeholder title'}
-            </FancyTitle>
-        </Title>
-        <img
-            src={slice.primary.picture.url ?? '/static/placeholder.svg'}
-            style={{
-                objectFit: 'cover',
-            }}
-        />
-    </Section>
+                <Title
+                    level={4}
+                    style={{
+                        margin: 0,
+                        color: item.text ?? 'var(--color-black)',
+                    }}
+                >
+                    <FancyTitle
+                        direction={-1}
+                        style={{
+                            marginTop: '1.5em',
+                            marginBottom: '0',
+                            paddingBottom: '.5em',
+                        }}
+                        color={item.text ?? 'var(--color-black)'}
+                    >
+                        {item.title[0].text ?? 'Placeholder title'}
+                    </FancyTitle>
+                </Title>
+                <img
+                    src={item.picture.url ?? '/static/placeholder.svg'}
+                    style={{
+                        objectFit: 'cover',
+                    }}
+                />
+            </Section>
+        ))}
+    </>
 )
 
 export default PictureSection

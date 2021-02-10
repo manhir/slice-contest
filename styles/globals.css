@@ -16,9 +16,8 @@
   
     --font-size: 16px;
 
-    
     --color-black: #1D1D1D;
-    --color-red: #B11818ff;
+    --color-red: #B11818;
     --color-white: #F0F0F0;
   
     --color-primary: var(--color-red);

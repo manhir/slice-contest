@@ -10,23 +10,24 @@
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "PictureSection",
-      "primary": {
+      "primary": {},
+      "items": {
         "title": {
-          "type": "StructuredText",
           "config": {
-            "single": "heading1",
             "label": "Title",
-            "placeholder": "This is where it all begins..."
-          }
+            "placeholder": "Placeholder title",
+            "allowTargetBlank": true,
+            "single": "heading4"
+          },
+          "type": "StructuredText"
         },
         "picture": {
-          "type": "Image",
           "config": {
-            "id": "picture",
-            "label": "",
+            "label": "picture",
             "constraint": {},
             "thumbnails": []
-          }
+          },
+          "type": "Image"
         },
         "text": {
           "config": {
@@ -43,9 +44,9 @@
         },
         "background": {
           "config": {
-            "label": "",
-            "placeholder": "bg color",
-            "default_value": "var(--color-red)",
+            "label": "background color",
+            "placeholder": "",
+            "default_value": "",
             "options": [
               "var(--color-red)",
               "var(--color-black)",
@@ -54,8 +55,7 @@
           },
           "type": "Select"
         }
-      },
-      "items": {}
+      }
     }
   ]
 }
