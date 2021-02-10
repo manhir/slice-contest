@@ -27,35 +27,27 @@ const SliderSection = ({ slice }) => {
             <Section
                 containerStyle={{
                     height: '100%',
-                    justifyContent: 'center',
                     marginBottom: 70,
                 }}
                 style={{
                     padding: '0',
-                }}
-                containerStyle={{
-                    height: '100%',
                 }}
             >
                 <Swiper
                     spaceBetween={'8.33%'}
                     slidesPerView={3}
                     navigation
-                    // pagination
                     autoplay
                     style={{
-                        height: '100%',
+                        height: '400px',
                     }}
                 >
                     {slice.items.map((item, i) => (
                         <SwiperSlide
                             key={i}
                             style={{
-                                flex: '1 1 100%',
                                 height: '100%',
                                 marginLeft: i == 0 && 'calc(8.33% - 6px)',
-                                justifySelf: 'stretch',
-                                alignSelf: 'stretch',
                             }}
                         >
                             <div
@@ -71,6 +63,7 @@ const SliderSection = ({ slice }) => {
                                 <img
                                     src={item.picture.url}
                                     style={{
+                                        height: '100%',
                                         objectFit: 'cover',
                                     }}
                                 />

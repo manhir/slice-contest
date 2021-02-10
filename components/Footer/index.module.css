@@ -1,0 +1,10 @@
+.links {
+    height: 70px;
+    border-bottom: var(--border);
+    align-items: center;
+    padding-left: 20px;
+}
+
+.links > a {
+    margin-right: calc(8.33% *2);
+}

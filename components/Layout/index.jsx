@@ -1,4 +1,5 @@
-import { Header } from '../Header'
+import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 
 export const Layout = (props) => {
     return (
@@ -12,6 +13,7 @@ export const Layout = (props) => {
             >
                 {props.children}
             </main>
+            <Footer />
         </>
     )
 }

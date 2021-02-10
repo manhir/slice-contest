@@ -1,13 +1,13 @@
 import { CSSProperties } from 'react'
 import s from './index.module.css'
 
-interface IFlexProps {
-    style?: CSSProperties
-    children?: React.ReactNode
-    className?: string
-}
+// interface IFlexProps {
+//     style?: CSSProperties
+//     children?: React.ReactNode
+//     className?: string
+// }
 
-export const Flex: React.FC<IFlexProps> = ({ children, style, className }) => {
+export const Flex = ({ children, style, className }) => {
     return (
         <div
             className={`${s.container} ${className}`}

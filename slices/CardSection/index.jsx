@@ -4,7 +4,7 @@ import { Section } from '@/components/Section'
 import { Ratio } from '@/components/Ratio'
 import { Title } from '@/components/Title'
 
-const MySlice = ({ slice }) => (
+const CardSection = ({ slice }) => (
     <>
         <Section
             bordered={false}
@@ -58,4 +58,4 @@ const MySlice = ({ slice }) => (
     </>
 )
 
-export default MySlice
+export default CardSection
