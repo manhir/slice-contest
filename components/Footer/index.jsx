@@ -33,7 +33,7 @@ export const Footer = (props) => {
                             <p
                                 style={{
                                     margin: 0,
-                                    paddingLeft: 20,
+                                    padding: '0 20px',
                                 }}
                             >
                                 Copyright 2099, all rights reserved. Made by

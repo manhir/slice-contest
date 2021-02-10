@@ -36,6 +36,7 @@ const FormSection = ({ slice }) => {
                         >
                             {slice.items.map((item, i) => (
                                 <input
+                                    key={i}
                                     name={item.name}
                                     placeholder={item.placeholder}
                                     ref={register}
@@ -47,15 +48,18 @@ const FormSection = ({ slice }) => {
                                         fontSize: '16px',
                                         color: 'var(--color-white)',
                                         border: 'none',
-                                        borderBottom: i !== slice.items.length-1 ? 'var(--border)' : 'none',
+                                        borderBottom:
+                                            i !== slice.items.length - 1
+                                                ? 'var(--border)'
+                                                : 'none',
                                         height: 70,
                                     }}
                                 />
                             ))}
                             <Button
+                                type='submit'
                                 style={{
                                     borderTop: 'var(--border)',
-                                    fontSize: 24,
                                 }}
                             >
                                 Send
