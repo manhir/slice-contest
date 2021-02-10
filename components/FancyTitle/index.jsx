@@ -1,3 +1,6 @@
+import s from './index.module.css'
+import cx from 'classnames'
+
 export const FancyTitle = ({
     count = 4,
     direction = 1,
@@ -7,19 +10,15 @@ export const FancyTitle = ({
     const outlines = []
     for (let i = 0; i < count; i++) {
         outlines[i] = (
-            <span key={i} className='stroke'>
-                <style jsx>{`
-                    .stroke {
-                        position: absolute;
-                        top: ${(i + 1) * 0.33 * direction}em;
-                        left: 0;
-                        z-index: ${i};
-
-                        color: transparent;
-                        -webkit-text-stroke: 1px ${color};
-                        opacity: 0.33;
-                    }
-                `}</style>
+            <span
+                key={i}
+                className={s.stroke}
+                style={{
+                    top: `${(i + 1) * 0.33 * direction}em`,
+                    zIndex: i,
+                    WebkitTextStroke: `1px ${color}`,
+                }}
+            >
                 {props.children}
             </span>
         )
@@ -27,18 +26,14 @@ export const FancyTitle = ({
 
     return (
         <>
-            <style jsx>{`
-                .container {
-                    position: relative;
-                    margin-bottom: 1.5em;
-                }
-                .fill {
-                    position: relative;
-                    z-index: ${count + 1};
-                }
-            `}</style>
-            <div className={`container ${props.className}`} style={props.style}>
-                <span className='fill'>{props.children}</span>
+            <div
+                className={cx(s.container, props.className)}
+                style={{
+                    zIndex: `${count + 1}`,
+                    ...props.style,
+                }}
+            >
+                <span className={s.fill}>{props.children}</span>
                 {outlines}
             </div>
         </>

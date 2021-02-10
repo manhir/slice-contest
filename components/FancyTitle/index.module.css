@@ -1,0 +1,15 @@
+.stroke {
+    position: absolute;
+    left: 0;
+
+    color: transparent;
+    opacity: 0.33;
+}
+
+.container {
+    position: relative;
+    margin-bottom: 1.5em;
+}
+.fill {
+    position: relative;
+}

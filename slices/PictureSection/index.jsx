@@ -8,9 +8,8 @@ const PictureSection = ({ slice }) => (
             <Section
                 key={i}
                 containerStyle={{
-                    backgroundColor:
-                        item.background ?? 'var(--color-red)',
-                    marginBottom: 1 !== slice.items.length - 1 && 0,
+                    backgroundColor: item.background ?? 'var(--color-red)',
+                    marginBottom: i !== slice.items.length - 1 && 0,
                 }}
                 style={{
                     maxHeight: 'calc(100vh - 70px)',
