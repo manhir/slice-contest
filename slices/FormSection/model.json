@@ -1,0 +1,62 @@
+{
+  "id": "form_section",
+  "type": "SharedSlice",
+  "name": "FormSection",
+  "description": "FormSection",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "FormSection",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title",
+            "placeholder": "This is where it all begins..."
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph",
+            "label": "Description",
+            "placeholder": "A nice description of your feature"
+          }
+        }
+      },
+      "items": {
+        "name": {
+          "config": {
+            "label": "Name",
+            "placeholder": "name placeholder"
+          },
+          "type": "Text"
+        },
+        "placeholder": {
+          "config": {
+            "label": "Placeholder",
+            "placeholder": "placeholder for placeholder"
+          },
+          "type": "Text"
+        },
+        "type": {
+          "config": {
+            "label": "Type",
+            "placeholder": "text",
+            "default_value": "",
+            "options": [
+              "text",
+              "email",
+              "number"
+            ]
+          },
+          "type": "Select"
+        }
+      }
+    }
+  ]
+}
