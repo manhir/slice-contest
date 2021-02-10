@@ -17,9 +17,6 @@ const SliderSection = ({ slice }) => {
             >
                 <Title
                     level={3}
-                    style={{
-                        margin: '.25em 0 .5em 0',
-                    }}
                 >
                     {slice.primary.title[0].text ?? 'Placeholder title'}
                 </Title>
@@ -47,7 +44,7 @@ const SliderSection = ({ slice }) => {
                             key={i}
                             style={{
                                 height: '100%',
-                                marginLeft: i == 0 && 'calc(8.33% - 6px)',
+                                marginLeft: i == 0 && '8.33%',
                             }}
                         >
                             <div

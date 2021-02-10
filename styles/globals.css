@@ -47,6 +47,10 @@ a {
   text-decoration: none;
 
   color: var(--color-red);
+  transition: color .25s;
+}
+a:hover {
+    color: var(--color-white);
 }
 
 img {
@@ -64,10 +68,10 @@ img {
 
 .swiper-button-prev {
     height: 100% !important;
-    width: calc(8.33%) !important;
+    width: calc(8.33% + 2px) !important;
     margin-top: 0 !important;
     top: auto !important;
-    left: -2px !important;
+    left: 0px !important;
     color: var(--color-primary) !important;
     background-color: var(--color-black);
     border-right: var(--border);
@@ -81,11 +85,11 @@ img {
 
 .swiper-button-next {
     height: 100% !important;
-    width: calc(8.33%) !important;
+    width: calc(8.33% + 2px) !important;
     z-index: 11 !important;
     margin-top: 0 !important;
     top: auto !important;
-    right: -2px !important;
+    right: 0px !important;
     color: var(--color-primary) !important;
     background-color: var(--color-black);
     border-left: var(--border);

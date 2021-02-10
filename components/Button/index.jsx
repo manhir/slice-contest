@@ -7,7 +7,7 @@ export const Button = ({ href, ...props }) => {
                 width: 100%;
                 padding: 20px;
 
-                font-family: Obviously;
+                font-family: Obviously Medium;
                 font-size: 36px;
                 font-weight: medium;
                 color: var(--color-white);

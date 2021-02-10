@@ -1,6 +1,4 @@
-const { Section } = require('../Section')
-
-import Link from 'next/link'
+import { Section } from '@/components/Section'
 import { Flex } from '@/components/Flex'
 import s from './index.module.css'
 

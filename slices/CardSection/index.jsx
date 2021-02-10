@@ -10,32 +10,36 @@ const CardSection = ({ slice }) => (
             bordered={false}
             containerStyle={{ borderTop: 'var(--border)' }}
         >
-            <Title level={3} style={{ margin: '.25em 0 .5em 0' }}>
+            <Title level={3}>
                 {slice.primary.title[0].text ?? 'Placeholder title'}
             </Title>
         </Section>
         {slice.items.map((item, i) => {
             const side = i % 2 == 0
             const pictureEl = (
-                <div style={{
-                    position: 'relative',
-                }}>
+                <div
+                    style={{
+                        position: 'relative',
+                    }}
+                >
                     <img
                         src={item.picture.url ?? '/static/placeholder.svg'}
                         style={{
                             width: '100%',
                             position: 'relative',
                             top: 0,
-                            zIndex: 1
+                            zIndex: 1,
                         }}
                     />
-                    <div style={{
-                        position: 'absolute',
-                        bottom: -2,
-                        width: '100%',
-                        height: 0,
-                        borderBottom: 'var(--border)',
-                    }} />
+                    <div
+                        style={{
+                            position: 'absolute',
+                            bottom: -2,
+                            width: '100%',
+                            height: 0,
+                            borderBottom: 'var(--border)',
+                        }}
+                    />
                 </div>
             )
             const textEl = (

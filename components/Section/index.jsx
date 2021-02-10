@@ -22,7 +22,7 @@ export const Section = ({bordered=true, fullWidth=false, ...props}) => {
                     border-bottom: ${bordered && 'var(--border);'}
                 }
                 .section {
-                    padding: 0 8.33%;
+                    padding: 0 calc(1440px * .0833);
                     max-width: 1440px;
                     width: 100%;
                 }

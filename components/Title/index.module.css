@@ -1,0 +1,32 @@
+.title {
+    font-family: Obviously Medium;
+    font-style: normal;
+
+    align-self: flex-start;
+}
+
+.h1 {
+    font-size: 128px;
+    font-family: Obviously Bold;
+    line-height: 140px;
+}
+
+.h2 {
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.h3 {
+    font-size: 36px;
+    font-weight: normal;
+    margin: .25em 0 .5em 20px;
+}
+
+.h4 {
+    font-size: 72px;
+    font-family: Obviously Bold;
+    line-height: 80px;
+}
+
+@media screen and (max-width: 480px) {
+}
