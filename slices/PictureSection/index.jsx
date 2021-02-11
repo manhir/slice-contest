@@ -1,6 +1,7 @@
 import { Section } from '@/components/Section'
 import { Title } from '@/components/Title'
 import { FancyTitle } from '@/components/FancyTitle'
+import { Img } from '@/components/Img'
 
 const PictureSection = ({ slice }) => (
     <>
@@ -12,10 +13,11 @@ const PictureSection = ({ slice }) => (
                     marginBottom: i !== slice.items.length - 1 && 0,
                 }}
                 style={{
-                    maxHeight: 'calc(100vh - 70px)',
+                    minHeight: 'calc(100vh - 70px)',
+                    height: '100%',
                     display: 'flex',
                     flexDirection: 'column',
-                    justifyContent: 'space-beteen',
+                    justifyContent: 'space-between',
                 }}
             >
                 <Title
@@ -37,12 +39,12 @@ const PictureSection = ({ slice }) => (
                         {item.title[0].text ?? 'Placeholder title'}
                     </FancyTitle>
                 </Title>
-                <img
-                    src={item.picture.url ?? '/static/placeholder.svg'}
-                    style={{
-                        objectFit: 'cover',
-                    }}
-                />
+                <div style={{
+                    position: 'relative',
+                    flex: '1 0 100%',
+                }}>
+                    <Img src={item.picture.url ?? '/static/placeholder.svg'} />
+                </div>
             </Section>
         ))}
     </>
