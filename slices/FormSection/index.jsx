@@ -39,6 +39,9 @@ const FormSection = ({ slice }) => {
                                     placeholder={item.placeholder}
                                     ref={register}
                                     type={item.type}
+                                    style={{
+                                        borderBottom: i !== slice.items.length-1 && 'var(--border)',
+                                    }}
                                 />
                             ))}
                             <Button

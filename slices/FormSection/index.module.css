@@ -13,10 +13,6 @@
     min-height: 70px;
 }
 
-.form > :not(:last-child) {
-    border-bottom: var(--border);
-}
-
 @media screen and (max-width: 480px) {
     .form:first-child {
         border-top: var(--border);

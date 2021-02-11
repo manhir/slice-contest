@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
-import SwiperCore, { Navigation, Pagination } from 'swiper'
+import SwiperCore, { Navigation } from 'swiper'
 import { Section } from '@/components/Section'
 import { Button } from '@/components/Button'
 import { Title } from '@/components/Title'

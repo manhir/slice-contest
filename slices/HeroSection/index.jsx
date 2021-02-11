@@ -32,9 +32,11 @@ const HeroSection = ({ slice }) => (
                 spacer={1}
                 right={6}
                 leftContent={
-                    <div style={{
-                        position: 'relative'
-                    }}>
+                    <div
+                        style={{
+                            position: 'relative',
+                        }}
+                    >
                         <div>
                             <img
                                 src={
@@ -53,18 +55,20 @@ const HeroSection = ({ slice }) => (
                         >
                             {slice.primary.button ?? 'Button'}
                         </Button>
-                        
-                        <div style={{
-                            position: 'absolute',
-                            bottom: -2,
-                            width: '100%',
-                            height: 0,
-                            borderTop: 'var(--border)',
-                        }} />
+
+                        <div
+                            style={{
+                                position: 'absolute',
+                                bottom: -2,
+                                width: '100%',
+                                height: 0,
+                                borderTop: 'var(--border)',
+                            }}
+                        />
                     </div>
                 }
                 rightContent={
-                    <Title level={2} style={{ padding: '0 20px' }}>
+                    <Title level={2} style={{ padding: '20px', margin: 0 }}>
                         {slice.primary.subtitle[0].text}
                     </Title>
                 }

@@ -2,6 +2,7 @@ import { Section } from '@/components/Section'
 import { Title } from '@/components/Title'
 import { FancyTitle } from '@/components/FancyTitle'
 import { Img } from '@/components/Img'
+import s from './index.module.css'
 
 const PictureSection = ({ slice }) => (
     <>
@@ -11,6 +12,7 @@ const PictureSection = ({ slice }) => (
                 containerStyle={{
                     backgroundColor: item.background ?? 'var(--color-red)',
                     marginBottom: i !== slice.items.length - 1 && 0,
+                    borderTop: i !== 0 && 'none',
                 }}
                 style={{
                     minHeight: 'calc(100vh - 70px)',
@@ -47,7 +49,7 @@ const PictureSection = ({ slice }) => (
                 >
                     <Img
                         src={item.picture.url ?? '/static/placeholder.svg'}
-                        style={{ objectFit: 'contain' }}
+                        className={s.img}
                     />
                 </div>
             </Section>
