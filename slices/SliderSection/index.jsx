@@ -4,10 +4,18 @@ import { Section } from '@/components/Section'
 import { Button } from '@/components/Button'
 import { Title } from '@/components/Title'
 import { Img } from '@/components/Img'
+import { createBreakpoint } from 'react-use'
+import s from './index.module.css'
 
-SwiperCore.use([Navigation, Pagination])
+SwiperCore.use([Navigation])
 
 const SliderSection = ({ slice }) => {
+    const useMobile = createBreakpoint({
+        mobile: 0,
+        desktop: 1440,
+    })
+    const isMobile = useMobile() == 'mobile'
+    console.log(useMobile())
     return (
         <>
             <Section
@@ -29,21 +37,15 @@ const SliderSection = ({ slice }) => {
                 }}
             >
                 <Swiper
-                    spaceBetween={'8.33%'}
-                    slidesPerView={3}
+                    spaceBetween={isMobile ? '25%' : '10%'}
+                    slidesPerView='auto'
                     navigation
-                    autoplay
-                    style={{
-                        height: '400px',
-                    }}
+                    className={s.swiper}
                 >
                     {slice.items.map((item, i) => (
                         <SwiperSlide
                             key={i}
-                            style={{
-                                height: '100%',
-                                marginLeft: i == 0 && '8.33%',
-                            }}
+                            className={s.slide}
                         >
                             <div
                                 style={{
@@ -61,7 +63,12 @@ const SliderSection = ({ slice }) => {
                                         position: 'relative',
                                     }}
                                 >
-                                    <Img src={item.picture.url} />
+                                    <Img
+                                        src={item.picture.url}
+                                        style={{
+                                            objectFit: 'contain',
+                                        }}
+                                    />
                                 </div>
 
                                 <Button
@@ -75,7 +82,6 @@ const SliderSection = ({ slice }) => {
                             </div>
                         </SwiperSlide>
                     ))}
-                    <SwiperSlide />
                 </Swiper>
             </Section>
         </>

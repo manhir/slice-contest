@@ -12,30 +12,14 @@ export const Footer = (props) => {
                         borderLeft: 'var(--border)',
                     }}
                 >
-                    <Flex
-                        style={{
-                            flexDirection: 'column',
-                            justifyContent: 'center',
-                        }}
-                    >
+                    <Flex className={s.twostack}>
                         <Flex className={s.links}>
                             <a href='/'>Storybook</a>
                             <a href='/'>Demo page</a>
                             <a href='/'>Slices</a>
                         </Flex>
-                        <div
-                            style={{
-                                height: 70,
-                                display: 'flex',
-                                alignItems: 'center',
-                            }}
-                        >
-                            <p
-                                style={{
-                                    margin: 0,
-                                    padding: '0 20px',
-                                }}
-                            >
+                        <div className={s.text}>
+                            <p>
                                 Copyright 2099, all rights reserved. Made by
                                 Somebody Licenced under the MIT-license
                             </p>

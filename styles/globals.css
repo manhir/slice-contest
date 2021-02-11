@@ -99,3 +99,21 @@ img {
     background-color: var(--color-primary) !important;
     color: var(--color-black) !important;
 }
+
+.swiper-pagination {
+    display: none !important;
+}
+
+@media screen and (max-width: 1280px) {
+    .swiper-button-prev {
+        display: none !important;
+    }
+    .swiper-button-next {
+        display: none !important;
+    }
+
+    .swiper-pagination {
+        display: block !important;
+        bottom: 0px !important;
+    }
+}

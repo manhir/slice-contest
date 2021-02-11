@@ -3,6 +3,7 @@ import { RichText } from 'prismic-reactjs'
 import { Section } from '@/components/Section'
 import { Ratio } from '@/components/Ratio'
 import { Title } from '@/components/Title'
+import s from './index.module.css'
 
 const CardSection = ({ slice }) => (
     <>
@@ -24,12 +25,7 @@ const CardSection = ({ slice }) => (
                 >
                     <img
                         src={item.picture.url ?? '/static/placeholder.svg'}
-                        style={{
-                            width: '100%',
-                            position: 'relative',
-                            top: 0,
-                            zIndex: 1,
-                        }}
+                        className={s.img}
                     />
                     <div
                         style={{
@@ -53,6 +49,7 @@ const CardSection = ({ slice }) => (
                         left={side ? 6 : 3}
                         spacer={1}
                         right={side ? 3 : 6}
+                        reverseMobile={side}
                         leftContent={side ? pictureEl : textEl}
                         rightContent={side ? textEl : pictureEl}
                     />

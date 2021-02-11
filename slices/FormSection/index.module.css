@@ -1,0 +1,24 @@
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.form > input {
+    background: var(--color-black);
+    padding: 20px;
+    font-family: Obviously;
+    font-size: 16px;
+    color: var(--color-white);
+    border: none;
+    min-height: 70px;
+}
+
+.form > :not(:last-child) {
+    border-bottom: var(--border);
+}
+
+@media screen and (max-width: 480px) {
+    .form:first-child {
+        border-top: var(--border);
+    }
+}

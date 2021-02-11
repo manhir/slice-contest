@@ -39,11 +39,16 @@ const PictureSection = ({ slice }) => (
                         {item.title[0].text ?? 'Placeholder title'}
                     </FancyTitle>
                 </Title>
-                <div style={{
-                    position: 'relative',
-                    flex: '1 0 100%',
-                }}>
-                    <Img src={item.picture.url ?? '/static/placeholder.svg'} />
+                <div
+                    style={{
+                        position: 'relative',
+                        flex: '1 0 100%',
+                    }}
+                >
+                    <Img
+                        src={item.picture.url ?? '/static/placeholder.svg'}
+                        style={{ objectFit: 'contain' }}
+                    />
                 </div>
             </Section>
         ))}

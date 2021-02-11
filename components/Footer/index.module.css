@@ -1,10 +1,33 @@
-.links {
-    height: 70px;
-    border-bottom: var(--border);
-    align-items: center;
-    padding-left: 20px;
+.twostack {
+    flex-direction: column;
+    justify-content: center;
 }
 
+.links {
+    min-height: 70px;
+    border-bottom: var(--border);
+    align-items: center;
+    padding: 20px;
+}
 .links > a {
     margin-right: calc(8.33% *2);
+}
+
+.text {
+    min-height: 70;
+    display: flex;
+    align-items: center;
+}
+.text > p {
+    margin: 0;
+    padding: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .links {
+        align-items: flex-start;
+    }
+    .links > a {
+        margin: 20px 0;
+    }
 }

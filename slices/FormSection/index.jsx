@@ -4,6 +4,7 @@ import { Ratio } from '@/components/Ratio'
 import { Button } from '@/components/Button'
 import { useForm } from 'react-hook-form'
 import { RichText } from 'prismic-reactjs'
+import s from './index.module.css'
 
 const FormSection = ({ slice }) => {
     const { register, handleSubmit } = useForm()
@@ -25,14 +26,11 @@ const FormSection = ({ slice }) => {
                     left={4}
                     spacer={1}
                     right={5}
+                    reverseMobile
                     leftContent={
                         <form
                             onSubmit={handleSubmit(onSubmit)}
-                            style={{
-                                position: 'relative',
-                                display: 'flex',
-                                flexDirection: 'column',
-                            }}
+                            className={s.form}
                         >
                             {slice.items.map((item, i) => (
                                 <input
@@ -41,19 +39,6 @@ const FormSection = ({ slice }) => {
                                     placeholder={item.placeholder}
                                     ref={register}
                                     type={item.type}
-                                    style={{
-                                        background: 'var(--color-black)',
-                                        padding: '20px',
-                                        fontFamily: 'Obviously',
-                                        fontSize: '16px',
-                                        color: 'var(--color-white)',
-                                        border: 'none',
-                                        borderBottom:
-                                            i !== slice.items.length - 1
-                                                ? 'var(--border)'
-                                                : 'none',
-                                        height: 70,
-                                    }}
                                 />
                             ))}
                             <Button
@@ -64,7 +49,6 @@ const FormSection = ({ slice }) => {
                             >
                                 Send
                             </Button>
-
                             <div
                                 style={{
                                     position: 'absolute',
@@ -77,13 +61,15 @@ const FormSection = ({ slice }) => {
                         </form>
                     }
                     rightContent={
-                        <div
-                            style={{
-                                padding: '0 20px',
-                            }}
-                        >
-                            <RichText render={slice.primary.description} />
-                        </div>
+                        <>
+                            <div
+                                style={{
+                                    padding: '0 20px',
+                                }}
+                            >
+                                <RichText render={slice.primary.description} />
+                            </div>
+                        </>
                     }
                 />
             </Section>

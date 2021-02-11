@@ -1,0 +1,23 @@
+.swiper {
+    height: 400px;
+    padding: 0 8.33%;
+}
+
+.slide {
+    height: 100%;
+    min-width: calc(8.33% * 3 + 20px * 4);
+    width: max-content;
+}
+
+@media screen and (max-width: 1280px) {
+    .swiper {
+        height: 300px;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .slide {
+        min-width: 75%;
+    }
+}

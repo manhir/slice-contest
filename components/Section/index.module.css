@@ -7,7 +7,7 @@
 }
 
 .section {
-    padding: 0 calc(1440px * .0833);
+    padding: 0 calc(1440px * 0.0833);
     max-width: 1440px;
     width: 100%;
 }
@@ -15,4 +15,10 @@
 .bordered {
     border-top: var(--border);
     border-bottom: var(--border);
+}
+
+@media screen and (max-width: 1280px) {
+    .section {
+        padding: 0 20px;
+    }
 }

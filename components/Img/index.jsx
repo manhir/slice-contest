@@ -1,5 +1,5 @@
 // next/image with layout='fill'
-export const Img = ({ src, ...props }) => (
+export const Img = ({ src, style, ...props }) => (
     <div
         style={{
             display: 'block',
@@ -33,6 +33,7 @@ export const Img = ({ src, ...props }) => (
                 minHeight: '100%',
                 maxHeight: '100%',
                 objectFit: 'cover',
+                ...style
             }}
             {...props}
         />
