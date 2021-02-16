@@ -16,12 +16,18 @@ export const Footer = (props) => {
                         <Flex className={s.links}>
                             <a href='/'>Storybook</a>
                             <a href='/'>Demo page</a>
-                            <a href='/'>Slices</a>
+                            <a href='https://github.com/manhir/slice-contest'>
+                                Slices
+                            </a>
                         </Flex>
                         <div className={s.text}>
                             <p>
-                                Copyright 2099, all rights reserved. Made by
-                                Somebody Licenced under the MIT-license
+                                {'Copyright 2021, all rights reserved. Made by '}
+                                <a href='https://github.com/manhir'>manhir</a>
+                                {' Licenced under the '}
+                                <a href='https://github.com/manhir/slice-contest/blob/master/LICENSE'>
+                                    MIT-license
+                                </a>
                             </p>
                         </div>
                     </Flex>
