@@ -52,6 +52,7 @@ const HeroSection = ({ slice }) => (
                             style={{
                                 borderTop: 'var(--border)',
                             }}
+                            href={slice.primary.href.url ?? '/'}
                         >
                             {slice.primary.button ?? 'Button'}
                         </Button>

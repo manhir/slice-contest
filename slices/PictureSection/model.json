@@ -33,11 +33,11 @@
           "config": {
             "label": "text color",
             "placeholder": "",
-            "default_value": "var(--color-black)",
+            "default_value": "black",
             "options": [
-              "var(--color-black)",
-              "var(--color-red)",
-              "var(--color-white)"
+              "black",
+              "red",
+              "white"
             ]
           },
           "type": "Select"
@@ -46,11 +46,11 @@
           "config": {
             "label": "background color",
             "placeholder": "",
-            "default_value": "",
+            "default_value": "red",
             "options": [
-              "var(--color-red)",
-              "var(--color-black)",
-              "var(--color-white)"
+              "red",
+              "black",
+              "white"
             ]
           },
           "type": "Select"

@@ -15,7 +15,6 @@ const SliderSection = ({ slice }) => {
         desktop: 1440,
     })
     const isMobile = useMobile() == 'mobile'
-    console.log(useMobile())
     return (
         <>
             <Section
@@ -75,7 +74,7 @@ const SliderSection = ({ slice }) => {
                                     style={{
                                         borderTop: 'var(--border)',
                                     }}
-                                    href='/'
+                                    href={item.href.url ?? '/'}
                                 >
                                     {item.button}
                                 </Button>

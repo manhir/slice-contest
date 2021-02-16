@@ -4,13 +4,13 @@ import { FancyTitle } from '@/components/FancyTitle'
 import { Img } from '@/components/Img'
 import s from './index.module.css'
 
-const PictureSection = ({ slice }) => (
+const PictureSection = ({ slice, knobColor, colorText, colorBg }) => (
     <>
         {slice.items.map((item, i) => (
             <Section
                 key={i}
                 containerStyle={{
-                    backgroundColor: item.background ?? 'var(--color-red)',
+                    backgroundColor: knobColor ? colorBg : `var(--color-${item.background})` ?? 'var(--color-red)',
                     marginBottom: i !== slice.items.length - 1 && 0,
                     borderTop: i !== 0 && 'none',
                 }}
@@ -26,7 +26,7 @@ const PictureSection = ({ slice }) => (
                     level={4}
                     style={{
                         margin: 0,
-                        color: item.text ?? 'var(--color-black)',
+                        color: knobColor ? colorText : `var(--color-${item.text})` ?? 'var(--color-black)',
                     }}
                 >
                     <FancyTitle
@@ -36,7 +36,7 @@ const PictureSection = ({ slice }) => (
                             marginBottom: '0',
                             paddingBottom: '.5em',
                         }}
-                        color={item.text ?? 'var(--color-black)'}
+                        color={knobColor ? colorText : `var(--color-${item.text})` ?? 'var(--color-black)'}
                     >
                         {item.title[0].text ?? 'Placeholder title'}
                     </FancyTitle>

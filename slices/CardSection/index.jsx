@@ -5,7 +5,7 @@ import { Ratio } from '@/components/Ratio'
 import { Title } from '@/components/Title'
 import s from './index.module.css'
 
-const CardSection = ({ slice }) => (
+const CardSection = ({ slice, oneSide, textLeft }) => (
     <>
         <Section
             bordered={false}
@@ -16,7 +16,7 @@ const CardSection = ({ slice }) => (
             </Title>
         </Section>
         {slice.items.map((item, i) => {
-            const side = i % 2 == 0
+            const side = ((oneSide ? 0 : i) + (textLeft ? 1 : 0)) % 2 == 0
             const pictureEl = (
                 <div
                     style={{

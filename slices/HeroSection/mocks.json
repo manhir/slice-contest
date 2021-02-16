@@ -1,1 +1,35 @@
-[{"id":"default-slice","name":"Default slice","docURL":"...","version":"sktwi1xtmkfgx8626","description":"HeroSection","primary":{"title":[{"type":"heading1","text":"reinvent strategic eyeballs","spans":[]}],"subtitle":[{"type":"paragraph","text":"Duis occaecat dolore in et irure sunt quis ullamco. Aute anim nostrud et sit laboris reprehenderit exercitation amet nisi officia.\r\nEx deserunt exercitation dolor consectetur et pariatur id ad nisi magna mollit cillum consectetur aute laborum. Anim cupidatat et sint excepteur. Fugiat tempor amet enim nisi esse.\r\nExercitation anim dolore fugiat laboris do magna. Aute laboris incididunt consequat fugiat consequat amet ut culpa voluptate ex.","spans":[]}],"picture":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.prismic.io/important-sm-images/5782503d-59e4-4a8a-bc4f-0388ee5b7a3d_Nhm0Uj5U7wc.jpg?w=900&h=500&fit=crop"},"button":"A text labelled \"Button\" that conveys Button"},"items":[],"slice_type":"hero_section"}]
+[
+    {
+        "id": "default-slice",
+        "name": "Default slice",
+        "docURL": "...",
+        "version": "sktwi1xtmkfgx8626",
+        "description": "HeroSection",
+        "primary": {
+            "title": [
+                {
+                    "type": "heading1",
+                    "text": "Hero section",
+                    "spans": []
+                }
+            ],
+            "subtitle": [
+                {
+                    "type": "paragraph",
+                    "text": "Commodo tempor cupidatat in. Occaecat sint Lorem proident eu commodo dolor eu fugiat consectetur.",
+                    "spans": []
+                }
+            ],
+            "picture": {
+                "dimensions": { "width": 900, "height": 500 },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "/static/placeholder.svg"
+            },
+            "button": "CTA button",
+            "href": { "link_type": "Web", "url": "https://slicemachine.dev" }
+        },
+        "items": [],
+        "slice_type": "hero_section"
+    }
+]

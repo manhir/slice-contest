@@ -31,10 +31,18 @@
         },
         "button": {
           "config": {
-            "label": "",
-            "placeholder": "button text"
+            "label": "button text",
+            "placeholder": "button text placeholder"
           },
           "type": "Text"
+        },
+        "href": {
+          "config": {
+            "label": "button link",
+            "placeholder": "",
+            "allowTargetBlank": true
+          },
+          "type": "Link"
         }
       }
     }

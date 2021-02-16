@@ -43,6 +43,14 @@
             "placeholder": "Button"
           },
           "type": "Text"
+        },
+        "href": {
+          "config": {
+            "label": "Button link",
+            "placeholder": "",
+            "allowTargetBlank": true
+          },
+          "type": "Link"
         }
       },
       "items": {}
