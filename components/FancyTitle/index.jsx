@@ -4,7 +4,7 @@ import cx from 'classnames'
 export const FancyTitle = ({
     count = 4,
     direction = 1,
-    color = 'var(--color-primary)',
+    color = 'var(--color-red)',
     ...props
 }) => {
     const outlines = []

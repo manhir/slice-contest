@@ -17,7 +17,7 @@ const HeroSection = ({ slice }) => (
             <Title level={1}>
                 <FancyTitle
                     style={{
-                        color: 'var(--color-primary)',
+                        color: 'var(--color-red)',
                     }}
                 >
                     {slice.primary.title

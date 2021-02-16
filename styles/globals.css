@@ -19,10 +19,8 @@
     --color-black: #1D1D1D;
     --color-red: #B11818;
     --color-white: #F0F0F0;
-  
-    --color-primary: var(--color-red);
 
-    --border: solid 2px var(--color-primary);
+    --border: solid 2px var(--color-red);
 }
 
 html,
@@ -71,14 +69,14 @@ img {
     margin-top: 0 !important;
     top: auto !important;
     left: 0px !important;
-    color: var(--color-primary) !important;
+    color: var(--color-red) !important;
     background-color: var(--color-black);
     border-right: var(--border);
 
     transition: color .25s, background-color .25s;
 } 
 .swiper-button-prev:hover {
-    background-color: var(--color-primary) !important;
+    background-color: var(--color-red) !important;
     color: var(--color-black) !important;
 }
 
@@ -89,14 +87,14 @@ img {
     margin-top: 0 !important;
     top: auto !important;
     right: 0px !important;
-    color: var(--color-primary) !important;
+    color: var(--color-red) !important;
     background-color: var(--color-black);
     border-left: var(--border);
 
     transition: color .25s, background-color .25s;
 }
 .swiper-button-next:hover {
-    background-color: var(--color-primary) !important;
+    background-color: var(--color-red) !important;
     color: var(--color-black) !important;
 }
 
