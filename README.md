@@ -1,34 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# dripDRIP
+My entry for [prismic slice contest](https://prismic.io/blog/slice-contest-2nd-edition?utm_campaign=devexp&utm_source=github&utm_medium=slicecontestpost)
+#
+[demo page](https://drop-drip-demo.vercel.app/)
+#
+[storybook](https://drop-drip-storybook.vercel.app/)
 
-## Getting Started
+## 5 Slices
 
-First, run the development server:
+### Hero
+for real big h1 and CTA stuff.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Card
+for long texts and images related to them.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Picture
+for big images and bold titles.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Slider
+for things to click on to.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Form
+for getting users information.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Header and Footer
 
-## Learn More
+### Header
+a header with logo example and if i got time there will be switcher for dark and light mode.
 
-To learn more about Next.js, take a look at the following resources:
+### Footer
+simple footer with links and boring stuff like licenses.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
