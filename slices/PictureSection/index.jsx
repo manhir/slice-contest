@@ -50,6 +50,7 @@ const PictureSection = ({ slice, knobColor, colorText, colorBg }) => (
                     <Img
                         src={item.picture.url ?? '/static/placeholder.svg'}
                         className={s.img}
+                        alt={item.picture.alt}
                     />
                 </div>
             </Section>

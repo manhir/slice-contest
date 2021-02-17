@@ -26,6 +26,7 @@ const CardSection = ({ slice, oneSide, textLeft }) => (
                     <img
                         src={item.picture.url ?? '/static/placeholder.svg'}
                         className={s.img}
+                        alt={item.picture.alt}
                     />
                     <div
                         style={{

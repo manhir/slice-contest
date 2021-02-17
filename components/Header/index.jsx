@@ -26,6 +26,7 @@ export const Header = (props) => {
                             paddingLeft: '.5em',
                         }}
                         src='/static/logo.svg'
+                        alt='Logo image'
                     />
                 </a>
             </Link>

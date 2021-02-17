@@ -47,6 +47,7 @@ const HeroSection = ({ slice }) => (
                                 style={{
                                     width: '100%',
                                 }}
+                                alt={slice.primary.alt}
                             />
                         </div>
                         <Button

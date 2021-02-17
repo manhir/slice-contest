@@ -67,6 +67,7 @@ const SliderSection = ({ slice }) => {
                                         style={{
                                             objectFit: 'contain',
                                         }}
+                                        alt={item.picture}
                                     />
                                 </div>
 
