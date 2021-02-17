@@ -1,4 +1,4 @@
-# dripDRIP
+# dropDRIP
 My entry for [prismic slice contest](https://prismic.io/blog/slice-contest-2nd-edition?utm_campaign=devexp&utm_source=github&utm_medium=slicecontestpost)
 #
 [demo page](https://drop-drip-demo.vercel.app/)
