@@ -1,5 +1,6 @@
 import { Section } from '@/components/Section'
 import { Flex } from '@/components/Flex'
+import Link from 'next/link'
 import s from './index.module.css'
 
 export const Footer = (props) => {
@@ -14,20 +15,28 @@ export const Footer = (props) => {
                 >
                     <Flex className={s.twostack}>
                         <Flex className={s.links}>
-                            <a href='/'>Storybook</a>
-                            <a href='/'>Demo page</a>
-                            <a href='https://github.com/manhir/slice-contest'>
-                                Slices
-                            </a>
+                            <Link href='https://drop-drip-storybook.vercel.app'>
+                                <a>Storybook</a>
+                            </Link>
+                            <Link href='https://drop-drip-demo.vercel.app'>
+                                <a>Demo</a>
+                            </Link>
+                            <Link href='https://github.com/manhir/slice-contest'>
+                                <a>Slices</a>
+                            </Link>
                         </Flex>
                         <div className={s.text}>
                             <p>
-                                {'Copyright 2021, all rights reserved. Made by '}
-                                <a href='https://github.com/manhir'>manhir</a>
+                                {
+                                    'Copyright 2021, all rights reserved. Made by '
+                                }
+                                <Link href='https://github.com/manhir'>
+                                    <a>manhir</a>
+                                </Link>
                                 {' Licenced under the '}
-                                <a href='https://github.com/manhir/slice-contest/blob/master/LICENSE'>
-                                    MIT-license
-                                </a>
+                                <Link href='https://github.com/manhir/slice-contest/blob/master/LICENSE'>
+                                    <a>MIT-license</a>
+                                </Link>
                             </p>
                         </div>
                     </Flex>
