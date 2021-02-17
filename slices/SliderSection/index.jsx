@@ -36,7 +36,7 @@ const SliderSection = ({ slice }) => {
                 }}
             >
                 <Swiper
-                    spaceBetween={isMobile ? '25%' : '10%'}
+                    spaceBetween={isMobile ? 80 : '10%'}
                     slidesPerView='auto'
                     navigation
                     className={s.swiper}
