@@ -4,6 +4,11 @@ My entry for [prismic slice contest](https://prismic.io/blog/slice-contest-2nd-e
 [demo page](https://drop-drip-demo.vercel.app/)
 #
 [storybook](https://drop-drip-storybook.vercel.app/)
+#
+font: Obviously from [Adobe Fonts](https://fonts.adobe.com/fonts/obviously)
+#
+images: all images are from [unsplash](https://unsplash.com)
+#
 
 ## 5 Slices
 
