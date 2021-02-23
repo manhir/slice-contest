@@ -1,5 +1,5 @@
 .title {
-    font-family: Obviously Medium;
+    font-family: Federation Bold;
     font-style: normal;
 
     align-self: flex-start;
@@ -7,7 +7,7 @@
 
 .h1 {
     font-size: 96px;
-    font-family: Obviously Bold;
+    font-family: Federation Bold;
     line-height: 140px;
 }
 
@@ -20,12 +20,11 @@
     font-size: 36px;
     font-weight: normal;
     margin: 20px;
-    min-height: 70px;
 }
 
 .h4 {
     font-size: 72px;
-    font-family: Obviously Bold;
+    font-family: Federation Bold;
     line-height: 80px;
 }
 
@@ -48,7 +47,6 @@
 
     .h3 {
         font-size: 24px;
-        min-height: unset;
     }
 
     .h4 {

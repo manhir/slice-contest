@@ -5,7 +5,7 @@ My entry for [prismic slice contest](https://prismic.io/blog/slice-contest-2nd-e
 #
 [storybook](https://drop-drip-storybook.vercel.app/)
 #
-font: Obviously from [Adobe Fonts](https://fonts.adobe.com/fonts/obviously)
+font: Federation, i honestly cheked 1st google page to find licence but didn't
 #
 images: all images are from [unsplash](https://unsplash.com)
 #

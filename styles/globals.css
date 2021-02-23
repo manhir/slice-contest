@@ -1,18 +1,15 @@
 @font-face {
-    font-family: 'Obviously';
-    src: url('/static/fonts/Obviously-Wide.otf');
+    font-family: 'Federation';
+    src: url('/static/fonts/Federation-Normal.otf');
 }
 @font-face {
-    font-family: 'Obviously Medium';
-    src: url('/static/fonts/Obviously-WideMedium.otf');
-}
-@font-face {
-    font-family: 'Obviously Bold';
-    src: url('/static/fonts/Obviously-WideSemibold.otf');
+    font-family: 'Federation Bold';
+    src: url('/static/fonts/Federation-Bold.otf');
 }
 
+
 :root {
-    --font-family: 'Obviously', sans-serif;
+    --font-family: 'Federation', sans-serif;
   
     --font-size: 16px;
 
@@ -33,6 +30,7 @@ body {
 
   font-size: var(--font-size);
   font-family: var(--font-family);
+  letter-spacing: 0.05em;
   
   color: var(--color-white);
 
